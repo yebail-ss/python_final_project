@@ -2,9 +2,9 @@
 ### python期末项目
 - [github_url](https://github.com/yebail-ss/python_final_project)
 
-- [pythonanywhere_url_1](http://forgunsmatter.pythonanywhere.com/)
+- [pythonanywhere_url_1较完整故事描述](http://forgunsmatter.pythonanywhere.com/)
 
-- [pythonanywhere_url_2](http://forgunsmatter2.pythonanywhere.com/)
+- [pythonanywhere_url_2]专门做的枪手介绍描述(http://forgunsmatter2.pythonanywhere.com/)
 
 #### 链接个数以及说明
 
