@@ -6,6 +6,7 @@
 
 - [pythonanywhere_url_2_专门做的枪手介绍描述](http://forgunsmatter2.pythonanywhere.com/)
 
+**相关说明：由于py文件过长，pythonanywhere部署会出现无法部署的现象，因而分开两个项目进行部署，完整项目功能可以下载项目源码到pycharm运行观看，另外此项目建议使用谷歌浏览器进行浏览**
 #### 链接个数以及说明
 
 - ##### 共十三个url
