@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+           <title>枪支暴力事件</title>
+ <style>
+
+    body{
+        background-color: white;
+        overflow-x:hidden;
+        max-width:100%;
+    }
+
+    .anniu{
+        height: 40px;
+        width: 80px;
+        background-color: black;
+        color: white;
+    }
+
+    p{
+        font-size:18px ;
+        font-family:sans-serif;
+        text-align:justify;
+    }
+
+    .inner-wrap {
+        width: 1000px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .top{
+        /* 设置宽度高度背景颜色 */
+        height: auto; /*高度改为自动高度*/
+        width:100%;
+        margin-left: 0;
+        background:black;
+        position: fixed; /*固定在顶部*/
+        top: 0;/*离顶部的距离为0*/
+        margin-bottom: 5px;
+    }
+    .top ul{
+        /* 清除ul标签的默认样式 */
+        width: auto;/*宽度也改为自动*/
+        list-style-type: none;
+        white-space:nowrap;
+        overflow: hidden;
+        margin-left: 5%;
+        /* margin-top: 0;          */
+        padding: 0;
+
+    }
+    .top li {
+        float:left; /* 使li内容横向浮动，即横向排列  */
+        margin-right:2%;  /* 两个li之间的距离*/
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top li a{
+       /* 设置链接内容显示的格式*/
+        display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+        color:white;
+        text-align: center;
+        padding: 3px;
+        overflow: hidden;
+        text-decoration: none; /* 去除下划线 */
+
+    }
+    .top li a:hover{
+        /* 鼠标选中时背景变为黑色 */
+        background-color: white;
+        color:black;
+    }
+
+    .menu-li{
+        font-size: 100%;
+    }
+
+    .tupian{
+        position: center;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+     img{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        position: center;
+     }
+
+     .box{
+         position:relative; width:500px;
+     }
+
+
+
+      .box p{
+         background-color: rgba(248,248,255,0.3);
+         display: inline-block;
+         margin: 1px 0 0;
+         padding: 0 2px 2px;
+         color:white;
+         position:absolute;
+         width:250px;
+         height:90px;
+         left:570px;
+         bottom:400px;
+         font-size: 30px;
+         font-family: "Roboto Light";
+    }
+
+ </style>
+</head>
+
+<body>
+
+<div style="position: relative;left:85%;top:60px" >
+    <button class="anniu">
+        <a class="anniu" href="page_08_frequent_words.html" style="text-decoration:none"><b>Previous</b></a>
+    </button>
+
+    <button class="anniu">
+        <a class="anniu" href="page_10_Who_was_attacked.html" style="text-decoration:none"><b>Next</b></a>
+    </button>
+</div>
+
+
+<div class="inner-wrap">
+
+    <br><br><br>
+
+    <h1>枪支暴力事件</h1>
+
+    <br>
+
+    <p>这是我目前找到的一份比较完整部分国家枪支拥有率的数据（2007年），虽然数据久了点，但是还能通过以前的数据来看现在。</p>
+    <p>首当其冲的还是美国，枪支数量的泛滥，也使得美国枪支暴力事件位居发达国家之首。</p>
+    <p>作为一个国家，美国与枪支有着深远而持久的联系。自美国建国以来，枪支已融入美国社会的体系，对许多美国人而言，枪支仍然是他们的骄傲。无论是狩猎，运动射击还是个人保护，大多数枪支拥有者都将携带武器的权利视为自由的核心。同时，与枪支有关的暴力活动的结果动摇了整个国家，关于枪支政策的辩论仍然两极分化。</p>
+</div>
+
+
+    <div>
+        <center>
+          {{ own_1|safe }}
+        </center>
+    </div>
+
+
+<div class="top">
+        <ul>
+            <li id="ml-0" class="menu-li">
+                <a href="page_cover.html" data-menu-top="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MASS KILLINGS</></font></a>
+            </li>
+            <li><a href="page_01_Number_of_guns.html"><b>枪支数量</b></a></li>
+            <li><a href="page_02_shooting.html"><b>案件地点</b></a></li>
+            <li><a href="page_04_Injured_person.html"><b>频率</b></a></li>
+            <li><a href="page_07_Suspects.html"><b>枪手</b></a></li>
+            <li><a href="page_10_Who_was_attacked.html"><b>易受攻击地点</b></a></li>
+            <li><a href="page_08_frequent_words.html"><b>易受攻击人群</b></a></li>
+            <li><a href="page_13_total_thing.html"><b>总结</b></a></li>
+        </ul>
+</div>
+
+</body>
+</html>

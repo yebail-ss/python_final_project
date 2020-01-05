@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>枪支数量</title>
+     <style>
+
+    body{
+        background-color: white;
+        overflow-x:hidden;      <!-- 固定窗口不能左右移动 -->
+        max-width:100%;
+    }
+
+    .anniu{
+        height: 40px;
+        width: 80px;
+        background-color: black;
+        color: white;
+    }
+
+    p{
+        font-size:18px ;
+        font-family:sans-serif;
+        text-align:justify;
+    }
+
+    .inner-wrap {
+        width: 1000px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .top{
+        /* 设置宽度高度背景颜色 */
+        height: auto; /*高度改为自动高度*/
+        width:100%;
+        margin-left: 0;
+        background:black;
+        position: fixed; /*固定在顶部*/
+        top: 0;/*离顶部的距离为0*/
+        margin-bottom: 5px;
+    }
+    .top ul{
+        /* 清除ul标签的默认样式 */
+        width: auto;/*宽度也改为自动*/
+        list-style-type: none;
+        white-space:nowrap;
+        overflow: hidden;
+        margin-left: 5%;
+        /* margin-top: 0;          */
+        padding: 0;
+
+    }
+    .top li {
+        float:left; /* 使li内容横向浮动，即横向排列  */
+        margin-right:2%;  /* 两个li之间的距离*/
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top li a{
+       /* 设置链接内容显示的格式*/
+        display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+        color:white;
+        text-align: center;
+        padding: 3px;
+        overflow: hidden;
+        text-decoration: none; /* 去除下划线 */
+
+    }
+    .top li a:hover{
+        /* 鼠标选中时背景变为黑色 */
+        background-color: white;
+        color:black;
+    }
+
+    .menu-li{
+        font-size: 100%;
+    }
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+<div style="position: relative;left:85%;top:60px" >
+    <button class="anniu">
+        <a class="anniu" href="page_00_the_description.html" style="text-decoration:none"><b>Previous</b></a>
+    </button>
+
+    <button class="anniu">
+        <a class="anniu" href="page_02_shooting.html" style="text-decoration:none"><b>Next</b></a>
+    </button>
+</div>
+
+
+<br><br><br>
+
+<div class="inner-wrap">
+<h1>我们先看看美国私人拥枪的数据</h1>
+<p>美国的枪击事件为何如此频繁？想知道美国枪支泛滥有多严重？看看美国人有多少枪就知道了。</p>
+<p>以下的数据图是据《华盛顿邮报》原引的一份美国国会2012年的报告所得。美国私人拥枪数量呈逐年增多态势，<strong>2009年美国私人拥有枪支的数量首次超过美国人口总额。</strong>2016年，美国拥有枪支的占全国人口的31%，美国人还能通过合法渠道购买枪支，也成为枪支管理问题难以管控的一大原因。</p>
+</div>
+
+<br><br><br>
+
+<div>
+    <center>
+     {{bar|safe}}
+    </center>
+</div>
+
+<br><br><br>
+
+
+
+
+<div class="top">
+        <ul>
+            <li id="ml-0" class="menu-li">
+                <a href="page_cover.html" data-menu-top="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MASS KILLINGS</></font></a>
+            </li>
+            <li><a href="page_01_Number_of_guns.html"><b>枪支数量</b></a></li>
+            <li><a href="page_02_shooting.html"><b>案件地点</b></a></li>
+            <li><a href="page_04_Injured_person.html"><b>频率</b></a></li>
+            <li><a href="page_07_Suspects.html"><b>枪手</b></a></li>
+            <li><a href="page_10_Who_was_attacked.html"><b>易受攻击地点</b></a></li>
+            <li><a href="page_08_frequent_words.html"><b>易受攻击人群</b></a></li>
+            <li><a href="page_13_total_thing.html"><b>总结</b></a></li>
+        </ul>
+</div>
+
+</body>
+</html>

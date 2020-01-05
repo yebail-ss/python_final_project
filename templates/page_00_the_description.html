@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>枪支暴力</title>
+    <style>
+
+    body{
+        background-color: white;
+        overflow-x:hidden;      <!-- 固定窗口不能左右移动 -->
+        max-width:100%;
+    }
+
+    .anniu{
+        height: 40px;
+        width: 80px;
+        background-color: black;
+        color: white;
+    }
+
+    p{
+        font-size:18px ;
+        font-family:sans-serif;
+        text-align:justify;
+    }
+
+    .inner-wrap {
+        width: 1000px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .top{
+        /* 设置宽度高度背景颜色 */
+        height: auto; /*高度改为自动高度*/
+        width:100%;
+        margin-left: 0;
+        background:black;
+        position: fixed; /*固定在顶部*/
+        top: 0;/*离顶部的距离为0*/
+        margin-bottom: 5px;
+    }
+    .top ul{
+        /* 清除ul标签的默认样式 */
+        width: auto;/*宽度也改为自动*/
+        list-style-type: none;
+        white-space:nowrap;
+        overflow: hidden;
+        margin-left: 5%;
+        /* margin-top: 0;          */
+        padding: 0;
+
+    }
+    .top li {
+        float:left; /* 使li内容横向浮动，即横向排列  */
+        margin-right:2%;  /* 两个li之间的距离*/
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top li a{
+       /* 设置链接内容显示的格式*/
+        display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+        color:white;
+        text-align: center;
+        padding: 3px;
+        overflow: hidden;
+        text-decoration: none; /* 去除下划线 */
+
+    }
+    .top li a:hover{
+        /* 鼠标选中时背景变为黑色 */
+        background-color: white;
+        color:black;
+    }
+
+    .menu-li{
+        font-size: 100%;
+    }
+
+
+    </style>
+</head>
+
+<body>
+
+<div style="position: relative;left:85%;top:60px" >
+    <button class="anniu">
+        <a class="anniu" href="page_cover.html" style="text-decoration:none"><b>Previous</b></a>
+    </button>
+
+    <button class="anniu">
+        <a class="anniu" href="page_01_Number_of_guns.html" style="text-decoration:none"><b>Next</b></a>
+    </button>
+</div>
+
+    <br><br><br><br>
+
+
+
+<div class="inner-wrap">
+    <p>枪支暴力一直是美国社会重大的公共议题之一，美国在过去50年（1966-2017年）中目睹了398次大规模枪击事件，造成1996人死亡和2488人受伤。</p>
+    <p>2017年10月1日拉斯维加斯的枪击事件是最糟糕的大规模枪击事件，导致59人死亡，527人受伤。这次袭击造成的伤害人数超过2015年和2016年所有大规模枪击事件加总的人数。</p>
+    <p>在过去的50年中，每年平均发生大规模枪击事件7次，每年夺去39条生命，造成48人受伤。</p>
+    <p>枪击是美国新闻报道当中最常见的关键词之一，同时，这也是美国人在平常生活当中无法避开的一个严重的问题。那么在美国枪击事件为什么发生的如此频繁？接下来的这些数据能够给出我们答案。</p>
+
+
+    <br><br>
+
+
+    <h3 >探讨的问题：</h3>
+    <li>每年有多少人被杀或受伤？</li>
+    <li>枪手与他/她的种族，性别之间是否有任何关联？</li>
+    <li>哪些城市和州更容易遭受此类攻击？</li>
+    <li>多少枪手存在某种心理健康问题？</li>
+</div>
+
+
+
+
+
+
+
+<div class="top">
+        <ul>
+            <li id="ml-0" class="menu-li">
+                <a href="page_cover.html" data-menu-top="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MASS KILLINGS</></font></a>
+            </li>
+            <li><a href="page_01_Number_of_guns.html"><b>枪支数量</b></a></li>
+            <li><a href="page_02_shooting.html"><b>案件地点</b></a></li>
+            <li><a href="page_04_Injured_person.html"><b>频率</b></a></li>
+            <li><a href="page_07_Suspects.html"><b>枪手</b></a></li>
+            <li><a href="page_10_Who_was_attacked.html"><b>易受攻击地点</b></a></li>
+            <li><a href="page_08_frequent_words.html"><b>易受攻击人群</b></a></li>
+            <li><a href="page_13_total_thing.html"><b>总结</b></a></li>
+        </ul>
+</div>
+
+
+</body>
+</html>

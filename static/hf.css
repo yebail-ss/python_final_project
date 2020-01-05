@@ -1,0 +1,91 @@
+body {
+  font-family:      impact, "times new roman", Verdana, Geneva, Arial, sans-serif;
+  font-size:        large;
+  color: white;
+  /*background-color: tan;*/
+  /*background-image: url(https://gitee.com/NFUNM068/minimal-mistakes/raw/master/images/IMG_33115.jpg) ;*/
+
+  /*background-image: url(https://gitee.com/NFUNM068/minimal-mistakes/raw/master/images/IMG_33115.jpg) ;*/
+  /*background-attachment: fixed;*/  
+  background-size:  cover;
+  margin-top:       5%;
+  margin-bottom:    5%;
+  margin-left:      10%;
+  margin-right:     10%;
+  border:           0px dotted gray;
+  padding:          20px 10px 10px 10px;
+}
+a {
+  text-decoration:  none; 
+  font-weight:      600; 
+}
+a:hover {
+  text-decoration:  underline;
+}
+a img {
+  border:           0;
+}
+h2 {
+  font-size:        350%;
+  text-align:       center;
+  /*-webkit-text-fill-color: white;*/
+  -webkit-text-stroke: 1.6px white;
+  color: rgba(0,0,0,0.1);
+}
+p {
+	font-size: 180%;
+	color:rgba(0,0,0,0.1);
+	-webkit-text-stroke: 1px white;
+	font-weight: 100%;
+}
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+  margin:0px auto;
+}
+td, th {
+  padding:          2px;
+  text-align:       left;
+}
+.copyright {
+  font-size:        75%;
+  font-style:       italic;
+}
+.slogan {
+  font-size:        75%;
+  font-style:       italic;
+}
+.confirmentry {
+  font-weight:      600; 
+}
+
+/*** Tables ***/
+
+table {
+font-size:          1em;
+background-color:   #fafcff;
+border:             1px solid #ffffff;
+color:              #2a2a2a;
+padding:            5px 5px 2px;
+border-collapse:    collapse;
+}
+
+td, th {
+border:             thin dotted gray;
+}
+
+/*** Inputs ***/
+input[type=text] {
+  font-size:        115%;
+  width:            30em;
+}
+input[type=submit] {
+  font-size:        200%;
+  color: black;
+  -webkit-text-stroke: 0.1px black;
+}
+select {
+  font-size:        125%;
+}

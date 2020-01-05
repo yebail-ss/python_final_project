@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>美国大型枪击事件</title>
+        <style>
+
+    .inner-wrap {
+        width: 1000px;
+        position: relative;
+        margin: 0 auto;
+    }
+    body{
+        background-color: white;
+        overflow-x:hidden;
+        max-width:100%;
+    }
+
+    .anniu{
+        height: 40px;
+        width: 80px;
+        background-color: black;
+        color: white;
+    }
+    .layui-form-item{
+        height: 40px;
+        width: 150px;
+        background-color: black;
+        color: white;
+        display: flex;
+    }
+        .layui-input-inline{
+        height: 40px;
+        width: 80px;
+        background-color: black;
+        color: white;
+        display: flex;
+    }
+
+    p{
+        font-size:18px ;
+        font-family:sans-serif;
+        text-align:justify;
+    }
+
+    .top{
+        /* 设置宽度高度背景颜色 */
+        height: auto; /*高度改为自动高度*/
+        width:100%;
+        margin-left: 0;
+        background:black;
+        position: fixed; /*固定在顶部*/
+        top: 0;/*离顶部的距离为0*/
+        margin-bottom: 5px;
+        z-index:9999
+    }
+    .top ul{
+        /* 清除ul标签的默认样式 */
+        width: auto;/*宽度也改为自动*/
+        list-style-type: none;
+        white-space:nowrap;
+        overflow: hidden;
+        margin-left: 5%;
+        /* margin-top: 0;          */
+        padding: 0;
+
+    }
+    .top li {
+        float:left; /* 使li内容横向浮动，即横向排列  */
+        margin-right:2%;  /* 两个li之间的距离*/
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top li a{
+       /* 设置链接内容显示的格式*/
+        display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+        color:white;
+        text-align: center;
+        padding: 3px;
+        overflow: hidden;
+        text-decoration: none; /* 去除下划线 */
+
+    }
+    .top li a:hover{
+        /* 鼠标选中时背景变为黑色 */
+        background-color: white;
+        color:black;
+    }
+
+    .menu-li{
+        font-size: 100%;
+    }
+
+    .map{
+        width: 60%;
+        height:40%;
+    }
+
+    #map_30cc33eb1e3a41deaa230e49510f8f28 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left:35%;
+        top: 0.0%;
+       z-index:-999;
+    }
+
+    #map_b2227a9b0b7c4c0580477c3b4d2c56d8 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 35%;
+        top: 0.0%;
+       z-index:-999;
+    }
+
+    </style>
+</head>
+<body>
+
+<div style="position: relative;left:85%;top:60px" >
+    <button class="anniu">
+        <a class="anniu" href="page_02_shooting.html" style="text-decoration:none"><b>Previous</b></a>
+    </button>
+
+    <button class="anniu">
+        <a class="anniu" href="page_04_Injured_person.html" style="text-decoration:none"><b>Next</b></a>
+    </button>
+</div>
+
+<br><br><br>
+
+<div class="inner-wrap">
+    <h1>选择您想查看的州数据</h1>
+</div>
+
+
+<div style="position: relative;top:-57px;display: inline-block">
+<form method="POST" action="/map_details" class="layui-form-item">
+
+ <select name="the_region_selected" class="layui-form-item">
+        {% for item in the_select_region %}
+            <option value="{{ item }}">{{ item }}</option>
+        {% endfor %}
+    </select>  <input value='Do it!' type='SUBMIT' class="layui-input-inline" >
+
+
+</form></div>
+<br><br>
+{{ the_plot_all|safe }}
+{{ the_res|safe }}
+
+
+<div class="top">
+        <ul>
+            <li id="ml-0" class="menu-li">
+                <a href="page_cover.html" data-menu-top="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MASS KILLINGS</></font></a>
+            </li>
+            <li><a href="page_01_Number_of_guns.html"><b>枪支数量</b></a></li>
+            <li><a href="page_02_shooting.html"><b>案件地点</b></a></li>
+            <li><a href="page_04_Injured_person.html"><b>频率</b></a></li>
+            <li><a href="page_07_Suspects.html"><b>枪手</b></a></li>
+            <li><a href="page_10_Who_was_attacked.html"><b>易受攻击地点</b></a></li>
+            <li><a href="page_08_frequent_words.html"><b>易受攻击人群</b></a></li>
+            <li><a href="page_13_total_thing.html"><b>总结</b></a></li>
+        </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>大型枪击案件的描述</title>
+         <style>
+
+    body{
+        background-color: white;
+        overflow-x:hidden;
+        max-width:100%;
+    }
+
+    .anniu{
+        height: 40px;
+        width: 80px;
+        background-color: black;
+        color: white;
+    }
+
+    p{
+        font-size:18px ;
+        font-family:sans-serif;
+        text-align:justify;
+    }
+
+    .inner-wrap {
+        width: 1000px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .top{
+        /* 设置宽度高度背景颜色 */
+        height: auto; /*高度改为自动高度*/
+        width:100%;
+        margin-left: 0;
+        background:black;
+        position: fixed; /*固定在顶部*/
+        top: 0;/*离顶部的距离为0*/
+        margin-bottom: 5px;
+    }
+    .top ul{
+        /* 清除ul标签的默认样式 */
+        width: auto;/*宽度也改为自动*/
+        list-style-type: none;
+        white-space:nowrap;
+        overflow: hidden;
+        margin-left: 5%;
+        /* margin-top: 0;          */
+        padding: 0;
+
+    }
+    .top li {
+        float:left; /* 使li内容横向浮动，即横向排列  */
+        margin-right:2%;  /* 两个li之间的距离*/
+        position: relative;
+        overflow: hidden;
+    }
+
+    .top li a{
+       /* 设置链接内容显示的格式*/
+        display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+        color:white;
+        text-align: center;
+        padding: 3px;
+        overflow: hidden;
+        text-decoration: none; /* 去除下划线 */
+
+    }
+    .top li a:hover{
+        /* 鼠标选中时背景变为黑色 */
+        background-color: white;
+        color:black;
+    }
+
+    .menu-li{
+        font-size: 100%;
+    }
+
+    .tupian{
+        position: relative;left:25%;top:50px
+    }
+     img{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        position: center;
+     }
+
+     .box{
+         position:relative; width:500px;
+     }
+
+
+
+      .box p{
+         background-color: rgba(248,248,255,0.3);
+         display: inline-block;
+         margin: 1px 0 0;
+         padding: 0 2px 2px;
+         color:white;
+         position:absolute;
+         width:250px;
+         height:90px;
+         left:570px;
+         bottom:400px;
+         font-size: 30px;
+         font-family: "Roboto Light";
+    }
+
+ </style>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<div style="position: relative;left:85%;top:60px" >
+    <button class="anniu">
+        <a class="anniu" href="page_07_Suspects.html" style="text-decoration:none"><b>Previous</b></a>
+    </button>
+
+    <button class="anniu">
+        <a class="anniu" href="page_09_Gun_violence.html" style="text-decoration:none"><b>Next</b></a>
+    </button>
+</div>
+
+
+
+<div class="inner-wrap">
+
+    <br><br><br>
+
+    <h1>下面我们来看一下在这些大型枪击案件的描述</h1>
+    <h1>出现最多的词语是什么？</h1>
+
+    <br>
+
+    <p>大量与“学生”、“家庭”、“工作”有关的描述词出现在图中，那么这些都是大多数案件的导火线，而且很多的无辜的受害者也可能会陷入其中。</p>
+</div>
+
+<div class="top">
+        <ul>
+            <li id="ml-0" class="menu-li">
+                <a href="page_cover.html" data-menu-top="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MASS KILLINGS</></font></a>
+            </li>
+            <li><a href="page_01_Number_of_guns.html"><b>枪支数量</b></a></li>
+            <li><a href="page_02_shooting.html"><b>案件地点</b></a></li>
+            <li><a href="page_04_Injured_person.html"><b>频率</b></a></li>
+            <li><a href="page_07_Suspects.html"><b>枪手</b></a></li>
+            <li><a href="page_10_Who_was_attacked.html"><b>易受攻击地点</b></a></li>
+            <li><a href="page_08_frequent_words.html"><b>易受攻击人群</b></a></li>
+            <li><a href="page_13_total_thing.html"><b>总结</b></a></li>
+        </ul>
+</div>
+
+    <div class="tupian">
+        <img src="{{ url_for("static", filename="img/word.png") }}">
+    </div>
+</body>
+</html>
