@@ -1,4 +1,4 @@
-# python_final_project
+> 温馨提示：请使用电脑端谷歌浏览器进行浏览，部分页面可翻译
 ### 一、相关链接
 - [github_url](https://github.com/yebail-ss/python_final_project)
 - [pythonanywhere_url](http://forgunsmatter.pythonanywhere.com/)
