@@ -2,19 +2,19 @@
 ### 一、相关链接
 - [github_url](https://github.com/yebail-ss/python_final_project)
 - [pythonanywhere_url](http://forgunsmatter.pythonanywhere.com/)
-#### 二、链接个数
+### 二、链接个数
 - **共二十个url**
 - [详情](https://github.com/yebail-ss/python_final_project/tree/master/templates)
 - 其中封面的url有两个，分别是"/"和"/page_cover.html"
 
-#### 三、基本交互功能html5控件使用丰富性
+### 三、基本交互功能html5控件使用丰富性
 - [li标签与a标签结合写导航栏](http://forgunsmatter.pythonanywhere.com/page_03_details.html)
 - [下拉框切换到对应的地图和表格](http://forgunsmatter.pythonanywhere.com/page_03_details.html)
 - [利用下拉框跳转到想要的页面](http://forgunsmatter.pythonanywhere.com/page_13_total_thing.html)
-#### 四、github文档格式
+### 四、github文档格式
 - 包含基本的templates，static，story.py以及三个csv数据文档
 - 由于传输数据需要将map_details.html与py文件放于同一层级
-#### 五、html档描述
+### 五、html档描述
 - 文档里都写有导航栏（div,ul,li组件与a标签组合实现此功能）和翻页按钮（button组件与a标签组合实现此功能）
 ```
 <div class="top">
@@ -41,7 +41,7 @@
 ```
  <img src="{{ url_for("static", filename="img/attack.png") }}">
 ```
-#### 六、Python档描述
+### 六、Python档描述
 - 导入了需要用到的模块(import)
 - 对数据进行导入和处理
 ```
@@ -90,12 +90,12 @@ the_region_selected = request.form["the_region_selected"]
 
 
 ```
-#### 七、web app描述
+### 七、web app描述
 - [导航栏切换](http://forgunsmatter.pythonanywhere.com/page_00_the_description.html)
 - [下拉框切换到对应的地图和表格](http://forgunsmatter.pythonanywhere.com/page_03_details.html)
 - [可以点击地图下切换到大地图](http://forgunsmatter.pythonanywhere.com/page_02_shooting.html)
 - [利用下拉框跳转到想要的页面](http://forgunsmatter.pythonanywhere.com/page_13_total_thing.html)
-#### 八、包含得分点
+### 八、包含得分点
 - 具有较复杂的结构嵌套（函数内含数列解包）
 ```
 @app.route("/map_01_details.html")
